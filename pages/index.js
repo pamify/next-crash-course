@@ -10,6 +10,7 @@ export default function Home({ articles }) {
 	);
 }
 
+// getting data from API - data.js
 export const getStaticProps = async () => {
 	const res = await fetch(`${server}/api/articles`);
 	const articles = await res.json();
@@ -20,6 +21,8 @@ export const getStaticProps = async () => {
 		}
 	};
 };
+
+// getting data from jsonplaceholder
 
 // export const getStaticProps = async () => {
 // 	const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`);

@@ -1,3 +1,5 @@
+// this is the entry point
+
 import Layout from '../components/Layout';
 import '../styles/globals.css';
 

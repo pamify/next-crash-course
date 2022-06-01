@@ -17,7 +17,7 @@ const article = ({ article }) => {
 		</>
 	);
 };
-
+// getting data from API - data.js
 export const getStaticProps = async context => {
 	const res = await fetch(`${server}/api/articles/${context.params.id}`);
 
@@ -43,6 +43,8 @@ export const getStaticPaths = async () => {
 		fallback: false
 	};
 };
+
+// getting data from jsonplaceholder
 
 // export const getStaticProps = async (context) => {
 //     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
